@@ -1,7 +1,7 @@
  [
   {
     id: 'GzqVMWH2foFz3NqMuwHH7a:3:CL:2695218:card',
-    name: 'Student full name',
+    name: 'Student full name github',
     description: 'Verify the full name of a student',
     version: '0.0.1',
     payload: {
