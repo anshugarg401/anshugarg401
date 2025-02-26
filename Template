@@ -1,0 +1,107 @@
+ [
+  {
+    id: 'GzqVMWH2foFz3NqMuwHH7a:3:CL:2695218:card',
+    name: 'Student full name',
+    description: 'Verify the full name of a student',
+    version: '0.0.1',
+    payload: {
+      type: ProofRequestType.AnonCreds,
+      data: [
+        {
+          schema: 'UsXVNHcx2LCBaUyexnFXur:2:student_card:1.0.0',
+          requestedAttributes: [
+            {
+              name: 'student_first_name',
+              restrictions: studentRestrictions,
+            },
+            {
+              name: 'student_last_name',
+              restrictions: studentRestrictions,
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    id: 'GzqVMWH2foFz3NqMuHH7a:3:CL:2695218:card',  //templateid
+    name: 'Student full name and expiration date',
+    description: 'Verify that full name of a student and that he/she has a not expired student card.',
+    version: '0.0.1',
+    payload: {
+      type: ProofRequestType.AnonCreds,
+      data: [
+        {
+          schema: 'UsXVNHcx2LCBaUyexnFXur:2:student_card:1.0.0',
+          requestedAttributes: [
+            {
+              names: ['student_first_name', 'student_last_name'],
+              restrictions: studentRestrictions,
+            },
+          ],
+          requestedPredicates: [
+            {
+              name: 'expiry_date',
+              predicateType: '>=',
+              predicateValue: 20240101,
+              restrictions: studentRestrictions,
+            },
+          ],
+        },
+      ],
+    },
+  },
+] [
+  {
+    id: 'GzqVMWH2foFz3NqMuwHH7a:3:CL:2695218:card',
+    name: 'Student full name',
+    description: 'Verify the full name of a student',
+    version: '0.0.1',
+    payload: {
+      type: ProofRequestType.AnonCreds,
+      data: [
+        {
+          schema: 'UsXVNHcx2LCBaUyexnFXur:2:student_card:1.0.0',
+          requestedAttributes: [
+            {
+              name: 'student_first_name',
+              restrictions: studentRestrictions,
+            },
+            {
+              name: 'student_last_name',
+              restrictions: studentRestrictions,
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    id: 'GzqVMWH2foFz3NqMuHH7a:3:CL:2695218:card',  //templateid
+    name: 'Student full name and expiration date',
+    description: 'Verify that full name of a student and that he/she has a not expired student card.',
+    version: '0.0.1',
+    payload: {
+      type: ProofRequestType.AnonCreds,
+      data: [
+        {
+          schema: 'UsXVNHcx2LCBaUyexnFXur:2:student_card:1.0.0',
+          requestedAttributes: [
+            {
+              names: ['student_first_name', 'student_last_name'],
+              restrictions: studentRestrictions,
+            },
+          ],
+          requestedPredicates: [
+            {
+              name: 'expiry_date',
+              predicateType: '>=',
+              predicateValue: 20240101,
+              restrictions: studentRestrictions,
+            },
+          ],
+        },
+      ],
+    },
+  },
+]
